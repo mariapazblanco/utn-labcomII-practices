@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Datos personales</h1>
+
+    <form action="/accion.php">
+        <fieldset>
+            <legend>Estudiante</legend>
+
+            <label for="nombrecompleto">Nombre completo</label>
+            <input type="nombrecompleto" id="nombrecompleto" name="nombrecompleto" placeholder="Ingrese su nombre completo" />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Ingrese su email">
+
+            <label for="edad">Edad</label>
+            <input type="edad" id="edad" name="edad" placeholder="Ingrese edad">
+
+            <label for="seleccionable">Nacionalidad</label>
+            <select name="seleccionable" id="seleccionable">
+                <option value="Argentina"selected>Argentina</option>
+                <option value="Peru">Peru</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Brasil">Brasil</option>
+            </select>
+
+            <label for="seleccionable">Condicion laboral</label>
+            <select name="seleccionable" id="seleccionable">
+                <option value="desempleado"selected>Desempleado</option>
+                <option value="en-busqueda-laboral">En busqueda laboral</option>
+                <option value="part-time">Part time</option>
+                <option value="fulltime">Fulltime</option>
+            </select>
+
+            <legend>Gustos personales</legend>
+            <label for="gustos-musicales"> Gustos musicales </label>
+            <input type="gustos-musicales" id="gustos-musicales" name="gustos-musicales" placeholder="Ingrese su gusto musical" />
+
+            <label for="seleccionable">Comida favorita</label>
+            <select name="seleccionable" id="seleccionable">
+                <option value="comida-al-horno">Comida al horno</option>
+                <option value="comida-asada">Comida asada</option>
+                <option value="comida-hervida">Comida hervida</option>
+            </select>
+
+            <label for="checkbox">Presione para recordar los datos del usuario</label>
+            <input type="checkbox" name="check" id="check">
+
+            <input type="button" value="button">
+            <input type="submit" value="enviar">
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>
