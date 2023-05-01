@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5 de la practica de flexbox</title>
+
+    <style>
+        .main{
+            display: flex;
+            gap: 2px;
+            font-family: sans-serif;
+
+        }
+
+        .main .sidebar {
+            background: pink;
+            flex:1 ;
+            height: 100vh;
+            padding: 12px 24px;
+        }
+
+        .main .contenido {
+            background: bisque;
+            flex: 4;
+            height: 100vh;
+            padding: 12px 24px;
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">contenido lateral</div>
+        <div class="contenido">Esto sería el contenido principal</div>
+    </div>
+</body>
+
+</html>

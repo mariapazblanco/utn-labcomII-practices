@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio numero 1 del uso de flexbox</title>
+
+    <style>
+        ul {
+            display: flex;
+            /*le da la horizontalidad al menu*/
+            justify-content: space-between;
+            /*distribuye los elementos sin dejar espacio en los bordes laterales.*/
+            gap: 2px;
+            padding: 0; /*generar espacio alrededor del contenido de un elemento dentro de los bordes definidos.*/
+            list-style: none; /*para que no aparezcan items*/
+        }
+
+        ul li {
+            background: rgba(123, 198, 199, 0.8);
+            flex-grow: 1;
+        }
+
+        ul a,
+        ul a:link {
+            font-family: sans-serif;
+            text-decoration: none;
+            color: black;
+            padding: 8px;
+            display: block;
+            width: 100%;/*ancho*/
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Opciones</a></li>
+        <li><a href="#">Planes</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+
+</body>
+
+</html>
