@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Space Mono');
+
+
+
+* {
+    font-family: sans-serif;
+}
+
+h1 {
+    color: #242424;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+h2 {
+    color: #606060;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+p {
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+ul   {
+    
+    font-size: 18px;
+    margin-left: 100px;
+    padding: 20px;
+    border: 2px solid blue;
+    width: 40%;
+    list-style-type: none;
+    
+}
+
+ul li{
+
+    font-family: monospace;
+    padding: 10px;
+}
+
+.prov-verde {
+
+    color: green;
+    
+}
+.prov-verde a {
+
+    color: green;
+}
+
+ul li:hover {
+    /*a:hover- un enlace cuando el usuario pasa el mouse sobre él*/
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+a {
+    font-weight: bold;
+}
+
+li a {
+    color: orange;
+    text-decoration: underline;
+}
+
+
+body {
+    background-color: rgb(245, 245, 245);
+}
