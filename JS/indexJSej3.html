@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function clkCalcular(){
+            let nomape = document.getElementById('nomape').value;
+            let cantresp = document.getElementById('cantresp').value;
+            let cantpreg = document.getElementById('cantpreg').value;
+
+            let resultado = document.getElementById('resultado');
+
+            let txtResultado = 'El postulante ' + nomape + 'obtuvo el Nivel ';
+
+            /*cantpreg = 100%
+            cantresp = %?*/ 
+            let calcularPorcentaje = Math.floor (cantresp * 100) / cantpreg;
+
+          /*Nivel superior: Porcentaje>=90%.
+            Nivel medio: Porcentaje>=75% y <90%.
+            Nivel regular: Porcentaje>=50% y <75%. 
+            Fuera de nivel: Porcentaje<50% */ 
+
+             if (calcularPorcentaje >= 90){
+                txtResultado += 'Superior con el ' + calcularPorcentaje + '%';
+
+             }else if(calcularPorcentaje >= 75 && calcularPorcentaje < 90){
+                txtResultado += 'Superior con el ' + calcularPorcentaje + '%';
+
+            }else if(calcularPorcentaje >= 50 && calcularPorcentaje < 75){
+                txtResultado += 'Superior con el ' + calcularPorcentaje + '%';
+            
+             }else{
+                txtResultado += 'Fuera de nivel';
+             }
+
+             resultado.innerText = txtResultado;
+            
+        }
+
+    </script>
+
+</head>
+<body>
+    <h3>Datos del postulante</h3>
+    <form id="form" action="">
+        <div id="div-dato1">
+            <label for="nomape">Nombre y apellido del postulante:</label>
+            <input type="text" name="nomape" id="nomape">
+        </div>
+        <div id="div-dato2">
+            <label for="cantpreg">Cantidad de preguntas realizadas:</label>
+            <input type="number" name="cantpreg" id="cantpreg">
+        </div>
+        <div id="div-dato3">
+            <label for="cantresp">Cantidad de preguntas respondidas:</label>
+            <input type="number" name="cantresp" id="cantresp">
+        </div>
+        <br>
+        <button type="button" id="boton" onclick="clkCalcular()">Calcular porcentaje </button>
+    </form>
+    <br>
+    <h1>
+        <div id="resultado"></div>
+    </h1>
+    
+</body>
+</html>
